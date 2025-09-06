@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive JS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎮 JavaScript Interactive Playground</h1>
+
+  <!-- Part 1: Buttons + Events -->
+  <button id="toggleTheme">🌙 Toggle Dark Mode</button>
+  <button id="counterBtn">Click Me!</button>
+  <p id="counterDisplay">Count: 0</p>
+
+  <!-- Part 2: Interactive FAQ -->
+  <h2>FAQ</h2>
+  <div class="faq">
+    <p class="question">What is JavaScript?</p>
+    <p class="answer hidden">JavaScript makes web pages dynamic and interactive!</p>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <h2>Dropdown Menu</h2>
+  <div class="dropdown">
+    <button id="dropdownBtn">Menu ▼</button>
+    <ul id="dropdownMenu" class="hidden">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Tabbed Interface -->
+  <h2>Tabbed Interface</h2>
+  <div class="tabs">
+    <button class="tabBtn active" data-tab="tab1">Tab 1</button>
+    <button class="tabBtn" data-tab="tab2">Tab 2</button>
+    <button class="tabBtn" data-tab="tab3">Tab 3</button>
+  </div>
+
+  <div id="tab1" class="tabContent">This is content for Tab 1</div>
+  <div id="tab2" class="tabContent hidden">This is content for Tab 2</div>
+  <div id="tab3" class="tabContent hidden">This is content for Tab 3</div>
+
+  <!-- Part 3: Form Validation -->
+  <h2>Sign Up Form</h2>
+  <form id="signupForm">
+    <label>
+      Name:
+      <input type="text" id="name" required>
+    </label>
+    <br>
+    <label>
+      Email:
+      <input type="email" id="email" required>
+    </label>
+    <br>
+    <label>
+      Password:
+      <input type="password" id="password" required>
+    </label>
+    <br>
+    <button type="submit">Register</button>
+    <p id="formMessage"></p>
+  </form>
+
+  <!-- ✅ Load JS only once -->
+  <script src="script.js"></script>
+</body>
+</html>
