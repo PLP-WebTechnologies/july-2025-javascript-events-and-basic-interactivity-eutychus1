@@ -77,3 +77,10 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+  
+body {
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  background: linear-gradient(135deg, #39FF14, #9D00FF);
+  background-attachment: fixed; /* stays in place while scrolling */
+}
